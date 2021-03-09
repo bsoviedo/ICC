@@ -17,35 +17,35 @@
     <h2>Flujo de datos </h2>
     <p>Se presentan el flujo de trabajo de los datos para la realización de la prueba de conocimiento. </p>   
 
-    <img src='../geovisor/Imagenes/FLUJO.png' alt='modelo entidad relación' width="950px">
+    <img src='imagenes/FLUJO.PNG' alt='flujo de trabajo' width="950px"/>
     <h2>Preparando la base de datos </h2>
     <h3>Datos iniciales</h3>
     <p> Desde los datos iniciales se puede observar que hay una relevancia con respecto al lugar de localización, por lo cual se
     hace necesario prestar especial atención a la componente espacial de las relaciones. Estas se harán mediante un Join 
 por el campo del nombre. Mientras que los otros campos se relacionarán entre si mediante diferentes id.</p> 
-    <img src='imagenes/datos.png' alt='modelo entidad relación'>
+    <img src='imagenes/datos.png' alt='datos iniciales'/>
     <h3>Modelo entidad- relación</h3>
     
     <p> En la siguiente se puede observar la conceptualización del modelo entidad relación que será creado en
         postgressql usando también la extensión espacial postgis.
     </p>
-    <img src='imagenes/entidad-relacion.png' alt='modelo entidad relación'>
+    <img src='imagenes/entidad-relacion.png' alt='modelo entidad relación'/>
     <h2>Creando la base de datos en Postgis </h2>
     <p>Posteriormente, en postgressql se crean las tablas correspondientes en una base de datos previamente creada </p>
-    <img src='imagenes/CREACIÓN TABLAS POSTGRES.png' alt='modelo entidad relación'>
+    <img src='imagenes/CREACIÓN TABLAS POSTGRES.png' alt='script creación tablas'/>
     <p>Y se le añaden los datos correspondientes. </p>
-    <img src='imagenes/INGRESODATOS.PNG' alt='modelo entidad relación'>
+    <img src='imagenes/INGRESODATOS.PNG' alt='script ingreso datos'/>
     <P> Posteriormente, se añade la capa espacial a la base de datos, se extraen los centroides y se hace un join para que cada registro de la base de datos
         tenga información espacial.
     Cada registro estará geolocalizado con respecto al centroide del municipio del cual hace parte.</p>
-    <img src='imagenes/JOIN.PNG' alt='modelo entidad relación'>
+    <img src='imagenes/JOIN.PNG' alt='script join'/>
     <p>
     Generando la siguiente capa:
     </P>
-    <img src='imagenes/CENTROIDES.PNG' alt='modelo entidad relación'>
+    <img src='imagenes/CENTROIDES.PNG' alt='modelo entidad relación'/>
     <p>Por último, como resultado de los join, se genera la capa que será llevada a qgis para exportar como un Geojson y 
     desplegar la visualización en la aplicación web</p>
-    <img src='imagenes/QGIS.PNG' alt='modelo entidad relación'>
+    <img src='imagenes/QGIS.PNG' alt='imagen centroides'/>
 
    
    
@@ -54,7 +54,7 @@ por el campo del nombre. Mientras que los otros campos se relacionarán entre si
         la acción que se generará al hacer clic en cada punto, para esta caso, se generó una tabla con los datos de interés,
         puesto que, la función L.BindPopup() permite escribir HTML en ella.
      </p>
-    <img src='imagenes/LEE.PNG' alt='modelo entidad relación'>
+    <img src='imagenes/LEE.PNG' alt='script carga geojson'/>
     <p> Por último, se añade al mapa con la función .addTo(Map) y ya quedan desplegados los datos del geojson en la ventana del geovisor.
         Los Geojson pueden ser optimizados para que su carga sea más efectiva, haciendo uso de plugins como prunnecluster o markercluster,
         para este caso se usó el segundo, y permiten visibilizar más de 1.000.000 registros de una manera rápida y eficiente (1.9 segundos, 
