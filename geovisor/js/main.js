@@ -1,3 +1,5 @@
+
+
 var map =  L.map('mapid', {
     center: [6, -75],
     zoom: 5
@@ -46,7 +48,7 @@ var right = '<h1>Bienvenido/a</h1>';
 var content= "<br>  <p> Esta página esta construida llamando los datos desde un geojson, debido a las limitaciones que se posee al no tener " +
 "un servidor que pueda estar conectado desplegando los datos de geoserver las 24 horas del día. Hay que " + 
 "recordar que geoserver debe estar instalado y debe correr 24/7 en un servidor para poder ser accesible siempre. <br> <br> De igual manera construí una página que " +
-"llama las capas alojadas en geoserver como un servicio WMS, el cual se puede ver en este <a href= 'EMPTY' alt='Enlace página geoserver'> enlace. </a>";
+"llama las capas alojadas en geoserver como un servicio WMS, el cual se puede ver en este <a href= 'https://bsoviedoy.github.io/ICC-WMS/geovisor_WMS/index.html' alt='Enlace página geoserver'> enlace. </a>";
 content += "<h2>Metadatos </h2>"
 content += "Epsg: 4686 <br>"
 content += "Datum: Magna-Sirgas <br>"
@@ -54,6 +56,6 @@ content += "Elaborado por: Brayan Stiven Oviedo Yate"
 
 
 var slide= L.control.slideMenu('', {position: 'topright', menuposition: 'topright', 
-width: '30%', height: '400px', delay: '50', icon: 'fa-chevron-left'}).addTo(map);
+width: '30%', height: '400px', delay: '20', icon: 'fas fa-bars'}).addTo(map);
 
 slide.setContents(right + content);
