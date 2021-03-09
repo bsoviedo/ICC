@@ -1,0 +1,109 @@
+html{
+    margin: 0px;
+}
+header{
+    background: rgb(100, 32, 32);
+    height: 75px;
+    padding: 0px;
+    margin-right: 7px;
+}
+
+h1{
+    padding-top: 2px;
+    padding-left: 15px
+}
+#mapid { 
+    width: 99%;
+    height: 500px;
+    display: block;
+    padding-bottom: 15px;
+    border:rgb(90, 68, 68) 3px solid;
+    margin-right: 5px;
+ }
+
+
+
+ footer{
+     display: block;
+     text-align: justify;
+     background: rgb(100, 32, 32);
+     height: 75px;
+     margin-top: -16px;
+     margin-right: 7px;
+     padding: 5px;
+ }
+
+#indicación{
+    text-align: center;
+}
+
+
+nav{
+    text-align:end;
+    font-size: 14px;
+    padding-right: 30px;
+    word-spacing: 0.50em;
+    margin:0;
+} 
+
+
+
+
+.enlace{
+    display:inline-block;
+    border-top: 3px solid rgb(155, 55, 55);
+    color:rgb(255, 255, 255);
+}
+
+.enlace:hover{
+    background-color:rgba(149, 112, 255, 0.6);
+    border-radius: 5px;
+
+}
+
+/*Enlaces de la barra nav*/
+
+nav a:link { 
+	font-weight: bold; 
+	text-decoration: none; 
+	color: rgb(180, 168, 224);
+	}
+
+nav a:visited { 
+	font-weight: bold; 
+	text-decoration: none; 
+	color: rgb(103, 103, 136);
+	}
+
+nav a:hover, a:focus, a:active { 
+        text-decoration: underline; 
+        color: #922d2d;
+        
+     }
+
+/* los demás enlaces */      
+
+a:link { 
+        font-weight: bold; 
+        text-decoration: none; 
+        color: rgb(63, 62, 62);
+ }
+
+a:visited { 
+	font-weight: bold; 
+	text-decoration: none; 
+	color:  rgb(68, 68, 68);
+	}
+
+a:hover, a:focus, a:active { 
+    text-decoration: underline; 
+    color: #922d2d;
+ }
+
+ img{
+     display:block;
+     margin: 0 auto;
+ }
+
+
+ 

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Resultados datos </title>
+        <link rel='stylesheet' href='css/main.css'>
+        <link rel='text/JavaScript' src='js/main.js' >
+<!--Acá se  importa Leaflet -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+crossorigin=""/>
+
+ <!-- Make sure you put this AFTER Leaflet's CSS -->
+ <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+   crossorigin=""></script>        
+
+<!-- Libreria marker cluster-->
+
+<link rel='stylesheet' href='../Leaflet.markercluster-1.4.1/dist/MarkerCluster.css'>
+<link rel='stylesheet' href='../Leaflet.markercluster-1.4.1/dist/MarkerCluster.Default.css'>
+<script type='text/javascript' src='../Leaflet.markercluster-1.4.1/dist/leaflet.markercluster.js'></script>
+
+<!-- Libreria Slide Menu-->
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="../Leaflet.SlideMenu-master/src/L.Control.SlideMenu.css">
+<script src="../Leaflet.SlideMenu-master/src/L.Control.SlideMenu.js"></script>
+
+
+<!--Llama los datos geojson-->
+        <script type="text/javascript" src="../Geojson/datos.js"></script>
+
+    </head>
+    <body>
+        <header>
+            <h1> Despliegue datos investigadores </h1>
+            <nav> 
+                <a href='index.html'> Geovisor </a> 
+                <a href='Process.html'>Detalles del proceso </a>
+            </nav>
+        </header>
+
+        <div id='mapid'> </div>
+        <script src='js/main.js'> </script> 
+
+<!--Elementos de Slide bar-->
+        <div> </div>
+        <footer>
+            <strong><p id='indicación'> Por favor, despliega el menú lateral de esquina superior derecha <br>
+                <br>
+                Si quieres conocer detalles del proceso, sigue este <a href= 'Process.html' alt='Enlace página detalles del proceso'> enlace </a> </p> </strong>
+        </footer>
+    </body>
+</html>
