@@ -2,4 +2,4 @@
 
 ENLACE COMPLETO:
 
-https://bsoviedoy.github.io/ICC/geovisor/index.html
+https://bsoviedo.github.io/ICC/geovisor/index.html
